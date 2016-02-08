@@ -1,11 +1,11 @@
 ---
 declared-services:
-  iot-sensor-tag-test-cloudant:
+  iot-temperature-tracker-cloudant:
     label: cloudantNoSQLDB
     plan: Shared
   iot-temperature-tracker-text-to-speech:
     label: text_to_speech
-    plan: Standard
+    plan: standard
 applications:
 - path: .
   memory: 512M
