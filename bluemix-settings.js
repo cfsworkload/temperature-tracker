@@ -75,11 +75,20 @@ if (process.env.NODE_RED_USERNAME && process.env.NODE_RED_PASSWORD) {
     }
 }
 
-settings.couchAppname = VCAP_APPLICATION['application_name'];
+/*settings.couchAppname = VCAP_APPLICATION['application_name'];
 
 
 var storageServiceName = process.env.NODE_RED_STORAGE_NAME || new RegExp("^"+settings.couchAppname+".cloudantNoSQLDB");
-var couchService = appEnv.getService(storageServiceName);
+var couchService = appEnv.getService(storageServiceName);*/
+
+var couchService;
+
+if(process.env.VCAP_SERVICES) {
+	var vcapServices = JSON.parse(process.env.VCAP_SERVICES);
+	if(vcapServices.cloudantNoSQLDB) {
+		couchService = vcapServices.cloudantNoSQLDB[0];
+	}
+}
 
 if (!couchService) {
     console.log("Failed to find Cloudant service");
