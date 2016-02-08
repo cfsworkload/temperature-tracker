@@ -37,7 +37,7 @@ Now we need to set up Cloudant to be able to search for data properly.
 4. Enter `my_demo_iot_db` as the database name and click **Create**.
 5. CLick the **+** symbol next to **All Design Docs** and select **New Search Index**.
 6. Enter `_d_search` as the document name (e.g. `_design/_d_search`), and enter `_inx_all` as the **Index name**.
-7. In a separate tab navigate to https://github.com/thomassuedbroecker/TempTracker_IoTBluemixMFPSample/blob/master/tempTrackCloudantConfiguration/search_index_function.txt and coopy the text in that document. Paste it as the **Search index function** in the **Cloudant** interface.
+7. In a separate tab navigate to https://github.com/thomassuedbroecker/TempTracker_IoTBluemixMFPSample/blob/master/tempTrackCloudantConfiguration/search_index_function.txt and copy the text in that document. Paste it as the **Search index function** in the **Cloudant** interface.
 8. Click **Save Docuemnt and Build Index**.
 
 ## Connect a simulated sensor to the application
