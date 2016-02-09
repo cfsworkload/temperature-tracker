@@ -2,21 +2,21 @@
 
 ### Analyzing Sensor Data
 
-The Temperature Tracker application demonstrates how you can use Node-RED to connect to a Internet of Things sensor and analyze the data from it.
+The Temperature Tracker app demonstrates how you can use Node-RED to connect to an Internet of Things sensor and analyze the data from it.
 
 ## Introduction
 
-This Temperature Tracker sample application has been created so you can deploy it into your personal DevOps space after signing up for Bluemix and DevOps Services. Once the application is set up, you will be able to attach an online sensor simulation and see alerts based on the data it generates.
+This Temperature Tracker sample app has been created so you can deploy it into your personal DevOps space after signing up for Bluemix and DevOps Services. Once the application is set up, you will be able to attach an online sensor simulation and see alerts based on the data it generates.
 
-To begin, click the **Deploy to Bluemix** button below. Make a note of the project name you chose - you'll need it later.
+To begin, click the **Deploy to Bluemix** button below. Make a note of the project name you choose, you'll need it later.
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://hub.jazz.net/git/nrchaney/iot-sensor-tag-test)
 
 ## Configure Node-RED to work with your application
 
-Configure Node-RED to work with your own application by updating its application-specific credentials.
+Configure Node-RED to work with your own application by updating its app-specific credentials.
 
-1. Go to your Bluemix dashboard and select the application.
+1. Go to your Bluemix dashboard and select the app.
 2. Click **Show Credentials** on the box for the **Text to Speech** service and copy the **username** and **password** in those credentials.
 3. Navigate to the Node-RED flow by clicking the URL for your application at the top of the screen and clicking the **Go to your Node-RED flow editor** button.
 4. Double-click on the **Show Geo WebSite with Sensor Cloudant Data** node and scroll to the bottom of the code.
@@ -38,11 +38,11 @@ Now we need to set up Cloudant to be able to search for data properly.
 5. CLick the **+** symbol next to **All Design Docs** and select **New Search Index**.
 6. Enter `_d_search` as the document name (e.g. `_design/_d_search`), and enter `_inx_all` as the **Index name**.
 7. In a separate tab navigate to https://github.com/thomassuedbroecker/TempTracker_IoTBluemixMFPSample/blob/master/tempTrackCloudantConfiguration/search_index_function.txt and copy the text in that document. Paste it as the **Search index function** in the **Cloudant** interface.
-8. Click **Save Docuemnt and Build Index**.
+8. Click **Save Document and Build Index**.
 
-## Connect a simulated sensor to the application
+## Connect a simulated sensor to the app
 
-Now that the application is set up, it's time to connect a sensor to it.
+Now that the app is set up, it's time to connect a sensor to it.
 
 1. In a new tab, navigate to https://quickstart.internetofthings.ibmcloud.com/iotsensor/.
 2. Copy the MAC address in the top right of the screen.
@@ -61,4 +61,4 @@ As long as the tab with the simulated sensor is open, your application will rece
 
 ## More information
 
-This application can work with a real sensor and companion mobile app. For more information, visit https://github.com/thomassuedbroecker/TempTracker_IoTBluemixMFPSample.
+This app can work with a real sensor and companion mobile app. For more information, visit https://github.com/thomassuedbroecker/TempTracker_IoTBluemixMFPSample.
