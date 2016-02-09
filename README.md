@@ -8,7 +8,7 @@ The Temperature Tracker app demonstrates how you can use Node-RED to connect to 
 
 This Temperature Tracker sample app has been created so you can deploy it into your personal DevOps space after signing up for Bluemix and DevOps Services. Once the application is set up, you will be able to attach an online sensor simulation and see alerts based on the data it generates.
 
-To begin, click the **Deploy to Bluemix** button below. Make a note of the project name you choose, you'll need it later.
+To begin, click the **Deploy to Bluemix** button below. Make a note of the project name you choose,  because you'll need it later.
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://hub.jazz.net/git/nrchaney/iot-sensor-tag-test)
 
