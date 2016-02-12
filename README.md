@@ -10,7 +10,7 @@ This Temperature Tracker sample app has been created so you can deploy it into y
 
 To begin, click the **Deploy to Bluemix** button below. Make a note of the project name you choose, because you'll need it later.
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://hub.jazz.net/git/nrchaney/iot-sensor-tag-test)
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/cfsworkload/temperature-tracker.git)
 
 ## Configure Node-RED to work with your application
 
